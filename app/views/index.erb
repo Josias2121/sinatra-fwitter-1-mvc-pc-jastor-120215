@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Fwitter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Fwitter</h1>
+<ul>
+      <% @tweets.each do |tweet| %>
+  <li>
+    <%= tweet.username %> says: 
+    <%= tweet.status %>
+  </li>
+      <% end %>
+</ul>
+    </div>
+   
+  </body>
+</html>
